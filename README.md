@@ -8,6 +8,7 @@ The Project was subdivided in three distinct tasks (paraphrased):
 1. Implement a Velocity Verlet routine and test it by simulating an harmonic oscillator and see that the energy is conserved.
 2. Run a short MD simulation of both input files provided and verify that there too, the energy is conserved. Add code to calculate the instantaneous temperature.
 3. Run MD simulations on both input files until equilibration and plot the instantaneous temperatures for both as well as a running average. Use this to estimate the melting temperature.
+Each task has it's own folder with all relevant files. In each task folder theres a sub-folder called SOURCE containing all the source code, including a gnu-plot script used to generate the plots.
 ### Code and Input data used
 As per the instructions the following two pieces of code, and input data, were included from the material provided (.tar file linked above: https://comphys.unibas.ch/TEACH/WS13/Material.tar):
 - MD.f90 (modified in terms of formatting, and some code added as per the instructions)
