@@ -1,0 +1,21 @@
+set term x11 0
+set title "Position vs. Time of the first mass"
+set xlabel "Time"
+set ylabel "Position"
+plot "./OUTPUT/pos_1" using 1:2 with lines title 'x', "./OUTPUT/pos_1" using 1:3 with lines title 'y', "./OUTPUT/pos_1" using 1:4 with lines title 'z'
+set term x11 1
+set title "Position vs. Time of the second mass"
+set xlabel "Time"
+set ylabel "Position"
+plot "./OUTPUT/pos_2" using 1:2 with lines title 'x', "./OUTPUT/pos_2" using 1:3 with lines title 'y', "./OUTPUT/pos_2" using 1:4 with lines title 'z'
+set term x11 2
+set title "Energy vs. Time of the whole system"
+set xlabel "Time"
+set ylabel "Energy"
+plot "./OUTPUT/energy" using 1:2 with lines title "Kinetic Energy", "./OUTPUT/energy" using 1:3 with lines title "Potential Energy", "./OUTPUT/energy" using 1:4 with lines title "Total Energy"
+set term x11 3
+set title "Energy fluctations vs. Time"
+set xlabel "Time"
+set ylabel "Energy"
+plot "./OUTPUT/energy" using 1:4 with lines title "Total Energy"
+pause -1 "hit any key"

@@ -1,0 +1,17 @@
+METHOD
+	SIMULATION
+		The two provided systems (contained in cold.dat and hot.dat) were evolved over 2*10^5 timesteps.
+		This was done using the code which can be found in the SOURCE folders.
+	ANALYSIS
+		TEMPERATURE
+		Using the graphical representation of the Temperature (Temperature.png) it was decided that the Systems reached equlibrium
+		after 10^5 timesteps. To get the average temperature the date from timestep 10^5 to 2*10^5 were used.
+		The average temperature was calculated for each system individually as well as for both systems together.
+		In addition the standart deviation was also calculated.
+		ENERGY
+		The fluctuation of the Energy was first verified to be small in task 2, using 1000 timesteps. This controll yielded fluctuations
+		in the energy of max 0.1 eV. 
+		The energy was also logged in the simulation over 2*10^5 timesteps. the picture "Energy-fluctuations.png" shows that the fluctuations
+		usually stay smaller than 0.08 eV.
+	RESULTS
+		Results are stored in the file RESULT.txt. In addition the raw data produced by the simulation can be found in the OUTPUT folders.

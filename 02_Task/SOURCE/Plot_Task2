@@ -1,0 +1,6 @@
+set term x11 0
+set title "Energy fluctations vs. Time"
+set xlabel "Time"
+set ylabel "Energy"
+plot "./OUTPUT_HOT/MDiter" using 1:2 with lines title "Total Energy (hot)", "./OUTPUT_COLD/MDiter" using 1:2 with lines title "Total Energy (cold)"
+pause -1 "hit any key"
